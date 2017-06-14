@@ -21,7 +21,7 @@ const store = createStore(
   applyMiddleware(middleware)
 )
 
-export { 
+export {
   history
 }
 
