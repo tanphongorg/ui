@@ -1,10 +1,10 @@
 import React from 'react'
 import { Button } from 'semantic-ui-react'
 
-const ButtonExampleEmphasis = () => (
+const ButtonExampleEmphasis = ({primary, secondary}) => (
   <div>
-    <Button primary>Primary</Button>
-    <Button secondary>Secondary</Button>
+    <Button primary>{primary}</Button>
+    <Button secondary>{secondary}</Button>
   </div>
 )
 
