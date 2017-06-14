@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Input, Menu } from 'semantic-ui-react'
+import { Input, Menu, Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 export default class MenuExampleSecondary extends Component {
@@ -7,7 +7,7 @@ export default class MenuExampleSecondary extends Component {
     return (
       <Menu secondary>
         <Menu.Item name='home'>
-          <Link to='/'>Home</Link>
+          <Link to='/'><Icon name='home' /></Link>
         </Menu.Item>
         <Menu.Item name='about'>
           <Link to='/about'>About</Link>

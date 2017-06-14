@@ -7,7 +7,7 @@ const CourseRow = ({ courses_chunk }) => (
   <Card.Group>
     {
       courses_chunk.map((chunk) => {
-        return (          
+        return (
           <CourseInfo course={chunk} />
         )
       })

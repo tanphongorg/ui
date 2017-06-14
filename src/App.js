@@ -13,7 +13,7 @@ import { Provider } from 'react-redux'
 import { Route } from 'react-router-dom'
 
 const App = () => (
-  <Provider store={store}>                   
+  <Provider store={store}>
     <ConnectedRouter history={history}>
       <div>
         <Menu />
