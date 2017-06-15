@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Input, Menu, Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
+import ProfileWidget from './ProfileWidget'
 
 export default class MenuExampleSecondary extends Component {
   render () {
@@ -10,14 +11,17 @@ export default class MenuExampleSecondary extends Component {
         <Menu.Item name='home'>
           <Link to='/'><Icon name='home' /></Link>
         </Menu.Item>
-        <Menu.Item name='about'>
-          <Link to='/about'>About</Link>
+        <Menu.Item>
+          <Input icon='search' placeholder='Search...' />
         </Menu.Item>
+        
         <Menu.Menu position='right'>
+          <Menu.Item name='about'>
+            <Link to='/about'>About</Link>
+          </Menu.Item>  
           <Menu.Item>
-            <Input icon='search' placeholder='Search...' />
+            <ProfileWidget />
           </Menu.Item>
-          <Menu.Item name='logout' />
         </Menu.Menu>
       </Menu>
     )

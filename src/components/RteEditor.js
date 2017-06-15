@@ -1,11 +1,7 @@
-import React, {Component, PropTypes} from 'react';
+import React, { Component } from 'react';
 import RichTextEditor from 'react-rte';
 
 export default class MyStatefulEditor extends Component {
-  static propTypes = {
-    onChange: PropTypes.func
-  };
-
   state = {
     value: RichTextEditor.createEmptyValue()
   }
@@ -17,7 +13,7 @@ export default class MyStatefulEditor extends Component {
       // This is here to demonstrate using `.toString()` but in a real app it
       // would be better to avoid generating a string on each change.
       this.props.onChange(
-        value.toString('html')
+        value.toString(this.props.format)
       );
     }
   };

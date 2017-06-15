@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from 'semantic-ui-react'
+import './App.css'
 
 import Menu from './components/Menu'
 
@@ -13,10 +14,13 @@ import { Route } from 'react-router-dom'
 const App = () => (
   <Container>
     <Menu />
-    <Route exact path='/' key={'home' + new Date()} component={HomePage} />
-    <Route path='/about' key={'about' + new Date()} component={AboutPage} />
-    <Route path='/search' key={'search' + new Date()} component={SearchPage} />
-    <Route path='/new_course' component={NewCoursePage} />
+    <hr />
+    <div className='containerPadding'>
+      <Route exact path='/' key={'home' + new Date()} component={HomePage} />
+      <Route path='/about' key={'about' + new Date()} component={AboutPage} />
+      <Route path='/search' key={'search' + new Date()} component={SearchPage} />
+      <Route path='/new_course' component={NewCoursePage} />
+    </div>
   </Container>
 )
 export default App

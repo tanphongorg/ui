@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Icon, Image, Button } from 'semantic-ui-react'
+import { Header, Icon, Button } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 const HeaderExampleUsersIcon = () => (
