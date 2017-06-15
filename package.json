@@ -4,17 +4,26 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
+    "draft-js": "^0.10.1",
+    "draft-js-hashtag-plugin": "^2.0.0-beta1",
+    "draft-js-linkify-plugin": "^2.0.0-beta1",
+    "draft-js-plugins-editor": "^2.0.0-beta1",
+    "es6-shim": "^0.35.3",
     "faker": "^4.1.0",
     "history": "^4.6.2",
     "lodash": "^4.17.4",
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
+    "react-froala-editor": "^1.0.2",
+    "react-medium-editor": "^1.8.1",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
     "react-router-redux": "next",
+    "react-rte": "^0.11.0",
     "redux": "^3.6.0",
     "semantic-ui-css": "^2.2.10",
-    "semantic-ui-react": "^0.68.5"
+    "semantic-ui-react": "^0.68.5",
+    "styled-components": "^2.0.1"
   },
   "devDependencies": {
     "enzyme": "^2.8.2",

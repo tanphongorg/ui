@@ -2,76 +2,19 @@
 
 exports[`renders without crashing 1`] = `
 <div>
-  <div
-    className="ui secondary menu"
-  >
-    <div
-      className="item"
-      onClick={[Function]}
-    >
-      <a
-        href="/"
-        onClick={[Function]}
-      >
-        <i
-          aria-hidden="true"
-          className="home icon"
-        />
-      </a>
-    </div>
-    <div
-      className="item"
-      onClick={[Function]}
-    >
-      <a
-        href="/about"
-        onClick={[Function]}
-      >
-        About
-      </a>
-    </div>
-    <div
-      className="right menu"
-    >
-      <div
-        className="item"
-        onClick={[Function]}
-      >
-        <div
-          className="ui icon input"
-        >
-          <input
-            placeholder="Search..."
-            type="text"
-          />
-          <i
-            aria-hidden="true"
-            className="search icon"
-          />
-        </div>
-      </div>
-      <div
-        className="item"
-        onClick={[Function]}
-      >
-        Logout
-      </div>
-    </div>
-  </div>
-  <div>
-    <h2>
-      Dung
-    </h2>
-    <div>
-      You are now at 
-      /
-    </div>
-    <a
-      href="/search"
-      onClick={[Function]}
-    >
-      Browse all courses
-    </a>
-  </div>
+  <MenuExampleSecondary />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+  <Route
+    component={[Function]}
+    path="/about"
+  />
+  <Route
+    component={[Function]}
+    path="/search"
+  />
 </div>
 `;

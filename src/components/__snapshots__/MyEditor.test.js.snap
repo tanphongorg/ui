@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<DraftEditor
+  blockRenderMap={
+    Immutable.Map {
+      ordered-list-item: Object {
+        "element": "li",
+        "wrapper": <ol
+          className="public-DraftStyleDefault-ol"
+      />,
+      },
+      header-six: Object {
+        "element": "h6",
+      },
+      header-four: Object {
+        "element": "h4",
+      },
+      header-one: Object {
+        "element": "h1",
+      },
+      unordered-list-item: Object {
+        "element": "li",
+        "wrapper": <ul
+          className="public-DraftStyleDefault-ul"
+      />,
+      },
+      atomic: Object {
+        "element": "figure",
+      },
+      unstyled: Object {
+        "aliasedElements": Array [
+          "p",
+        ],
+        "element": "div",
+      },
+      header-two: Object {
+        "element": "h2",
+      },
+      code-block: Object {
+        "element": "pre",
+        "wrapper": <pre
+          className="public-DraftStyleDefault-pre"
+      />,
+      },
+      blockquote: Object {
+        "element": "blockquote",
+      },
+      header-five: Object {
+        "element": "h5",
+      },
+      header-three: Object {
+        "element": "h3",
+      },
+    }
+  }
+  blockRendererFn={[Function]}
+  blockStyleFn={[Function]}
+  editorState={
+    EditorState {
+      "_immutable": Object {
+        "allowUndo": true,
+        "currentContent": Object {
+          "blockMap": Object {
+            "c7t7a": Object {
+              "characterList": Array [],
+              "data": Object {},
+              "depth": 0,
+              "key": "c7t7a",
+              "text": "",
+              "type": "unstyled",
+            },
+          },
+          "entityMap": Object {
+            "__add": [Function],
+            "__create": [Function],
+            "__get": [Function],
+            "__getLastCreatedEntityKey": [Function],
+            "__mergeData": [Function],
+            "__replaceData": [Function],
+            "add": [Function],
+            "create": [Function],
+            "get": [Function],
+            "getLastCreatedEntityKey": [Function],
+            "mergeData": [Function],
+            "replaceData": [Function],
+          },
+          "selectionAfter": Object {
+            "anchorKey": "c7t7a",
+            "anchorOffset": 0,
+            "focusKey": "c7t7a",
+            "focusOffset": 0,
+            "hasFocus": false,
+            "isBackward": false,
+          },
+          "selectionBefore": Object {
+            "anchorKey": "c7t7a",
+            "anchorOffset": 0,
+            "focusKey": "c7t7a",
+            "focusOffset": 0,
+            "hasFocus": false,
+            "isBackward": false,
+          },
+        },
+        "decorator": null,
+        "directionMap": Object {
+          "c7t7a": "LTR",
+        },
+        "forceSelection": false,
+        "inCompositionMode": false,
+        "inlineStyleOverride": null,
+        "lastChangeType": null,
+        "nativelyRenderedContent": null,
+        "redoStack": Array [],
+        "selection": Object {
+          "anchorKey": "c7t7a",
+          "anchorOffset": 0,
+          "focusKey": "c7t7a",
+          "focusOffset": 0,
+          "hasFocus": false,
+          "isBackward": false,
+        },
+        "treeMap": Object {
+          "c7t7a": Array [
+            Object {
+              "decoratorKey": null,
+              "end": 0,
+              "leaves": Array [
+                Object {
+                  "end": 0,
+                  "start": 0,
+                },
+              ],
+              "start": 0,
+            },
+          ],
+        },
+        "undoStack": Array [],
+      },
+    }
+  }
+  keyBindingFn={[Function]}
+  onChange={[Function]}
+  readOnly={false}
+  spellCheck={false}
+  stripPastedStyles={false}
+/>
+`;
