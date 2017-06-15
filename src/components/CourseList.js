@@ -3,12 +3,12 @@ import { Grid, Card } from 'semantic-ui-react'
 import _ from 'lodash'
 import CourseInfo from './CourseInfo'
 
-const CourseRow = ({ courses_chunk }) => (
+const CourseRow = ({ coursesChunk }) => (
   <Card.Group>
     {
-      courses_chunk.map((chunk) => {
+      coursesChunk.map((chunk) => {
         return (
-          <CourseInfo course={chunk} />
+          <CourseInfo key={chunk.id} course={chunk} />
         )
       })
     }
@@ -16,12 +16,12 @@ const CourseRow = ({ courses_chunk }) => (
 )
 
 const GridExampleDividedNumber = ({ courses }) => (
-  <Grid columns={3} divided>
+  <Grid columns={3}>
     {
-      _.chunk(courses, 3).map((courses_) => {
+      _.chunk(courses, 3).map((courses_, i) => {
         return (
-          <Grid.Row>
-            <CourseRow courses_chunk={courses_} />
+          <Grid.Row key={i} verticalAlign={'middle'} >
+            <CourseRow coursesChunk={courses_} />
           </Grid.Row>
         )
       })

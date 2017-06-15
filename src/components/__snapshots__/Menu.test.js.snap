@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<Menu
+  secondary={true}
+>
+  <MenuItem
+    name="home"
+  >
+    <Link
+      replace={false}
+      to="/"
+    >
+      <Icon
+        as="i"
+        name="home"
+      />
+    </Link>
+  </MenuItem>
+  <MenuItem
+    name="about"
+  >
+    <Link
+      replace={false}
+      to="/about"
+    >
+      About
+    </Link>
+  </MenuItem>
+  <MenuMenu
+    position="right"
+  >
+    <MenuItem>
+      <Input
+        icon="search"
+        placeholder="Search..."
+        type="text"
+      />
+    </MenuItem>
+    <MenuItem
+      name="logout"
+    />
+  </MenuMenu>
+</Menu>
+`;

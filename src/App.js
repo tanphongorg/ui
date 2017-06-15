@@ -1,27 +1,22 @@
 import React from 'react'
-import 'semantic-ui-css/semantic.min.css'
+import { Container } from 'semantic-ui-react'
 
 import Menu from './components/Menu'
 
-import LandingPage from './pages/LandingPage'
+import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import SearchPage from './pages/SearchPage'
+import NewCoursePage from './pages/NewCoursePage'
 
-import store, { history } from './store'
-import { ConnectedRouter } from 'react-router-redux'
-import { Provider } from 'react-redux'
 import { Route } from 'react-router-dom'
 
 const App = () => (
-  <Provider store={store}>
-    <ConnectedRouter history={history}>
-      <div>
-        <Menu />
-        <Route exact path='/' component={LandingPage} />
-        <Route path='/about' component={AboutPage} />
-        <Route path='/search' component={SearchPage} />
-      </div>
-    </ConnectedRouter>
-  </Provider>
+  <Container>
+    <Menu />
+    <Route exact path='/' key={'home' + new Date()} component={HomePage} />
+    <Route path='/about' key={'about' + new Date()} component={AboutPage} />
+    <Route path='/search' key={'search' + new Date()} component={SearchPage} />
+    <Route path='/new_course' component={NewCoursePage} />
+  </Container>
 )
 export default App

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<Card>
+  <CardContent>
+    <Image
+      as="img"
+      floated="right"
+      size="mini"
+      src="https://react.semantic-ui.com/assets/images/avatar/large/steve.jpg"
+      ui={true}
+    />
+    <CardHeader>
+      Course 1
+    </CardHeader>
+    <CardMeta>
+      Meta 1
+    </CardMeta>
+    <CardDescription>
+      Description 1
+    </CardDescription>
+  </CardContent>
+  <CardContent
+    extra={true}
+  >
+    <div
+      className="ui two buttons"
+    >
+      <Button
+        as="button"
+        basic={true}
+        color="green"
+      >
+        Approve
+      </Button>
+      <Button
+        as="button"
+        basic={true}
+        color="red"
+      >
+        Decline
+      </Button>
+    </div>
+  </CardContent>
+</Card>
+`;
