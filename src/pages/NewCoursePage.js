@@ -4,6 +4,7 @@ import { withRouter } from 'react-router'
 import EditorFormatSelector from '../components/EditorFormatSelector'
 import RteEditor from '../components/RteEditor'
 import LatexEditor from '../components/LatexEditor'
+import CourseWizard from '../components/CourseWizard'
 
 class NewCoursePage extends React.Component {
   state = {
@@ -21,7 +22,7 @@ class NewCoursePage extends React.Component {
     }
     return (
       <div>
-        <h2>New Course</h2>
+        <CourseWizard />
         <hr/>
         <EditorFormatSelector onFormatChange={this.onFormatChange} />
         { editor }

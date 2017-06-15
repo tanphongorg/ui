@@ -9,7 +9,7 @@ export default class MenuExampleSecondary extends Component {
     return (
       <Menu secondary className={className}>
         <Menu.Item name='home'>
-          <Link to='/'><Icon name='home' /></Link>
+          <Link to='/'><Icon name='graduation' /></Link>
         </Menu.Item>
         <Menu.Item>
           <Input icon='search' placeholder='Search...' />
